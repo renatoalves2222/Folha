@@ -1,0 +1,7 @@
+ @author Aluno
+ */
+public class ControllerPagamento {
+    public double calculaSalario(Funcionario docente){
+        return 0;        
+    }
+}
