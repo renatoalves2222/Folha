@@ -1,0 +1,41 @@
+*/
+public class Professor extends Funcionario {
+
+    private static final double HORA_BASE = 160;
+    private static final double SALARIO_BASE = 425;
+    private String qualificacao;
+
+    private String matricula;
+
+    public Professor(String nome) {
+        super(nome);
+    }
+
+    public void setQualificacao(String qualifificacao) {
+        this.qualificacao = qualifificacao;
+    }
+
+    public String getQualificacao() {
+        return qualificacao;
+    }
+
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
+    }
+
+    public String getMatricula() {
+        return matricula;
+    }
+
+    /**
+     *
+     * @param qtHora
+     * @return
+     */
+    @Override
+    public double calculaSalario(double qtHora){
+        double SALARIO_BASE = super.calculaSalario(qtHora)* Funcionario.VALOR_HORA;
+        return SALARIO_BASE + Professor.SALARIO_BASE;
+    }
+
+}
