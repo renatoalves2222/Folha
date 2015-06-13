@@ -1,0 +1,47 @@
+*/
+public class Funcionario {
+
+    private String nome;
+    private double salario;
+    private double bonificacao;
+    public static double VALOR_HORA = 25;
+
+    public Funcionario(String nome) {
+        this.nome = nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setSalario(double salario) {
+        this.salario = salario;
+    }
+
+    public double getSalario() {
+        return salario;
+    }
+
+    public void setBonificacao(double bonificacao) {
+        this.bonificacao = bonificacao;
+    }
+
+    public double getBonificacao() {
+        return bonificacao;
+    }
+
+    public double calcularBonificacao(double horaTrabalhada) {
+
+        return bonificacao;
+    }
+
+    public double calculaSalario(double qtHora) {
+        double salario = Funcionario.VALOR_HORA * qtHora;
+        return salario;
+    }
+
+}
