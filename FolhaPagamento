@@ -1,0 +1,18 @@
+*/
+public class FolhaPagamento {
+
+    public static void main(String atrs[]) {
+        //gera folha
+
+        Professor joao = new Professor("Joaõ Ribeiro");
+
+        System.out.println("Nome: " + joao.getNome()
+                + ": salario: " + joao.calculaSalario(40));
+
+        Secretario anna = new Secretario("Anna Bubu");
+
+        System.out.println("Nome: " + anna.getNome()
+                + ": salario: " + anna.calculaSalario(40));
+    }
+
+}
